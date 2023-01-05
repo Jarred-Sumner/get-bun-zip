@@ -53,7 +53,7 @@ if (!response.ok) {
 if ("Bun" in globalThis) {
   await Bun.write(filename, response);
 } else {
-  const buffer = await response.arrayBuffer();
+  const buffer = new Buffer(await response.arrayBuffer());
   (await import("fs")).writeFileSync(filename, buffer);
 }
 console.timeEnd("Downloaded ./" + filename + ` (${version})`);

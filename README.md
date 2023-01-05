@@ -1,6 +1,6 @@
 # get-bun-zip
 
-Download bun's zip file via `bunx`.
+Download bun's zip file for a particular platform/version via `bunx`.
 
 Usage:
 

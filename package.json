@@ -1,11 +1,12 @@
 {
   "name": "get-bun-zip",
-  "module": "index.ts",
+  "module": "index.mjs",
   "type": "module",
+  "version": "0.0.8",
   "devDependencies": {
     "bun-types": "^0.4.0"
   },
   "bin": {
-    "get-bun-zip": "index.mjs"
+    "get-bun-zip": "run.sh"
   }
 }
